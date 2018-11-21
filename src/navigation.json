@@ -1,0 +1,32 @@
+{
+  "nav": [
+    {
+      "name":"home",
+      "href": "/",
+      "title": "home",
+      "id": "100",
+      "componentName" : "Home" 
+    },
+    {
+      "name":"portfolio",
+      "href": "/portfolio",
+      "title": "portfolio",
+      "id": "200",
+      "componentName" : "Portfolio"
+    },
+    {
+      "name":"contacts",
+      "href": "/contacts",
+      "title": "contact",
+      "id": "300",
+      "componentName" : "Contacts"
+    },
+    {
+      "name":"library",
+      "href": "/library",
+      "title": "library",
+      "id": "400",
+      "componentName" : "SampleLib"
+    }
+  ]
+}

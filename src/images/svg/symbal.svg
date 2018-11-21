@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 40">
+    <symbol viewBox="0 0 100 100" id="symb1">
+        <ellipse cx="15" cy="25" rx="4" ry="20" fill="purple" stroke="orange" stroke-width="1"></ellipse>
+    </symbol>
+        <use xlink:href="#symb1" height="70" width="90" x="3" y="0"></use>
+        <g style="transform: translateX(76px) rotate(90deg) translateY(35px);">
+        <use xlink:href="#symb1" height="65" width="90" x="-4" y="1"></use>
+        </g>
+        <g style="transform:translateX(14px) rotate(43deg) translateY(-11px);">
+        <use xlink:href="#symb1" height="75" width="90"></use>
+        </g>
+        <g style="transform:translateX(33px) rotate(140deg) translateY(-26px);">
+        <use xlink:href="#symb1" height="75" width="90"></use>
+        </g>
+</svg>

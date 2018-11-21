@@ -1,0 +1,143 @@
+.webDeveloper{
+  .jumbotron {
+    box-shadow: 2px 4px 16px;
+    margin-top: 10%;
+  
+      padding: 30px;
+      margin-bottom: 30px;
+      font-size: 21px;
+      line-height: 2.1428571435;
+      color: inherit;
+      background-color: #eee;
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+
+      p{
+        font-weight: 400;
+      }
+
+      h1{
+        padding-top: 20px;
+          span.bracket {
+            color: #282845;
+          }
+          span.code {
+            color: #e8991a;
+          }
+          span.dot {
+            color: #258dc8;
+          }
+        }
+      
+    }
+      /* -- Tool tip -- */
+      span[data-toolTip],
+      span[data-toolTip-email-1],
+      span[data-toolTip-email-2],
+      span[data-toolTip-email-3],
+      span[data-toolTip-email-4] {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        cursor: help;
+      }
+
+    span[data-toolTip]:hover::after {
+      content: attr(data-toolTip);
+      position: absolute;
+      left: -10px;
+      top: 50px;
+      width: 238px;
+      height: 215px;
+      border: 1px #808080 solid;
+      border-radius: 10px;
+      padding: 3px 0 0 0;
+      box-shadow: 2px 3px 40px 1px #4a4a4a;
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 24px;
+      z-index: 1;
+      font-family: 'Londrina Solid', cursive;
+      background: url(images/author-img-tooltip.jpg) rgba(74, 74, 74, 0.7) no-repeat 0 0;
+    }
+
+    .fadeThis {
+      -webkit-animation: fading 1500ms ease-in-out 0s 1 normal none;
+      -moz-animation: fading 1500ms ease-in-out 0s 1 normal none;
+      -o-animation: fading 1500ms ease-in-out 0s 1 normal none;
+      animation: fading 1500ms ease-in-out 0s 1 normal none;
+    }
+
+    @-webkit-keyframes fading {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.2;
+      }
+      40% {
+        opacity: 0.4;
+      }
+      60% {
+        opacity: 0.6;
+      }
+      1000% {
+        opacity: 1;
+      }
+    }
+
+      /* color class colorThis */
+      .colorThis {
+        -webkit-animation: colorCng 3s infinite alternate;
+        -moz-animation: colorCng 3s infinite alternate;
+        -o-animation: colorCng 3s infinite alternate;
+        animation: colorCng 3s infinite alternate;
+      }
+      @-webkit-keyframes colorCng {
+        0% {
+          color: #16B4ED;
+        }
+        20% {
+          color: #14A8DC;
+        }
+        100% {
+          color: #333;
+        }
+      }
+      @-moz-keyframes colorCng {
+        0% {
+          color: #16B4ED;
+        }
+        20% {
+          color: #14A8DC;
+        }
+        100% {
+          color: #333;
+        }
+      }
+      @-o-keyframes colorCng {
+        0% {
+          color: #16B4ED;
+        }
+        20% {
+          color: #14A8DC;
+        }
+        100% {
+          color: #333;
+        }
+      }
+      @keyframes colorCng {
+        0% {
+          color: #16B4ED;
+        }
+        20% {
+          color: #14A8DC;
+        }
+        100% {
+          color: #333;
+        }
+      }
+    }
+
+  
+

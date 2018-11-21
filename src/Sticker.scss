@@ -1,0 +1,108 @@
+
+.sticker {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  margin: 0 2em 0.5em 0;
+  animation: stickerFadeIn 2s ease;
+  max-width: 300px;
+ 
+  @media(max-width:425px){
+    right: -50px;
+    bottom: 40px;
+  }
+  .fadeOut{
+    animation: stickerFadeOut 500ms ease;
+  }
+
+  @keyframes stickerFadeIn {
+    from { bottom: -100vh; }
+    to { bottom: 0; }
+  }
+
+  @keyframes stickerFadeOut {
+    from { opacity:1; bottom: 0; transform:scale(1)}
+    to { opacity:0; bottom: -10vh; transform:scale(10)}
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -1.5vh;
+    right: 0;
+    outline:none;
+    font-size: 0.70em;
+    padding: 0.45em;
+    @media(max-width: 579px){
+      top: -0.15vh;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .sticky_container {
+    box-shadow: 3px 3px 8px rgba(178, 175, 175, 0.79);
+    padding: 0.35em 0.85em;
+    border-radius: 2%;
+    background: rgb(241,231,103);
+    background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+    background: linear-gradient(to bottom, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 );
+    @media(max-width: 579px){
+      width: 125px;
+      padding: 0.25em 0.15em;
+      line-height: 0.80;
+    }
+
+    a {
+      color:#333;
+    
+      &:hover {
+        text-decoration: none;
+      }
+      span.icon{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='32' class='octicon octicon-mark-github' viewBox='0 0 16 16' version='1.1' width='32' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z'%3E%3C/path%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 32px;
+        display: block;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      small{
+        font-size: 50%;
+      }
+    }
+  }
+  .sideWall{
+    transform: rotate(-90deg);
+    position: fixed;
+    right: -66px;
+    bottom: 120px;
+    font-size: 0.5em;
+    transition: all 500ms;
+    width:155px;
+    text-align: center;
+    
+    @media(max-width:425px){
+      bottom: 190px;
+        }
+      a{
+        vertical-align: middle;
+      }
+      &:hover{
+        transform: rotate(0);
+        position: fixed;
+        right: 6px;
+        padding: 0.95em;
+      }
+      .icon{
+        float: left;
+      }
+    } 
+}

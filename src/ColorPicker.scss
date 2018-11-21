@@ -1,0 +1,51 @@
+.colorPicker{
+  @media(max-width:991px){display:none;}
+  display:inline-block;
+  font-size:16px;
+  position: fixed;
+  top:10vh;
+  left:-3.0em;
+  background-color:#eee;
+  box-sizing: border-box;
+  transition:all 550ms ease-in-out;
+  opacity:0.2; 
+  padding-right: 3em;
+  box-shadow: 2px 2px 5px grey;
+   > span{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -38%;
+    top: 45%;
+    font-size: 1.32em;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    &:hover{
+      opacity:0.9;
+      left:0;
+      background-color: rgba(12, 9, 43, 0.256);
+    }
+    li {
+      font-size:0;
+      width:30px;
+      height:30px;
+      margin:6px 0;
+      box-shadow: 2px 2px 3px grey;
+      display:block;
+      border-radius:5px;
+      transform: rotate(-5deg);
+       
+      &:before{
+        content:'';
+        font-size:20px;
+      }
+      &:hover{
+        cursor: crosshair;
+
+      }
+    }
+}
+

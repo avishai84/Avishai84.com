@@ -1,14 +1,17 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+@import url('Header.scss');
+@import url('ColorPicker.scss');
+@import url('Contacts.scss');
+@import url('ContentWrapper.scss');
+@import url('Home.scss');
+@import url('Library.scss');
+@import url('Navigation.scss');
+@import url('Portfolio.scss');
+@import url('SocialFooter.scss');
+@import url('SVGinDepth.scss');
+@import url('Sticker.scss');
+@import url('Footer.scss');

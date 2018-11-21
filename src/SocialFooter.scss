@@ -1,0 +1,33 @@
+.socialFooter{
+  font-style: italic;
+  font-size: 20px;
+  color:orange;
+  display:block;
+  text-align:center;
+    .small{
+      color:#31708f;
+      font-size: 0.50em;
+      padding-top:2vh;
+      .fa-heart-o{color:Red;}
+      a{
+        &:last-child{
+          .fa-lg{
+            &::after{
+              content: '';
+              display:inline-block;
+            }
+          }
+        }
+      .fa-lg{
+        font-size: 1.933333333333333em;
+        &::after{
+          content: '|';
+          display:inline-block;
+          padding-left:4px;
+          padding-right:4px;
+          margin-bottom:14px;
+          }
+        }
+      }
+    }
+  }

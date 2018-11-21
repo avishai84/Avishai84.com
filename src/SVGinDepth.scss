@@ -1,0 +1,120 @@
+.SVGinDepth{
+
+    @media(min-width: 1024px){
+      margin-top:10vh;
+    }
+    /*svg in depth*/
+      svg.ww {
+      animation: falling 4s infinite;
+      transform-origin:center;
+    }
+    .container{
+      text-align: left;
+
+      section:not(:first-child){
+        border:1px dashed grey;
+        padding:5px 10px;
+        margin:0 5%;
+        margin-top:20px;
+        background-color:rgba(211,211,211, 0.3);
+        
+
+
+        h1, h2, h3{
+          text-transform:capitalize;
+          font-size: 110%;
+        }
+        ol {
+            margin-left: 5px;
+            -webkit-margin-start: 5px;
+            li {
+              padding-top: 5px;
+              padding-bottom: 5px;
+              padding-left: 10px;
+          }
+        }
+
+        a:hover{
+          color:#000d42;
+          text-decoration: none;
+        }
+        code:before{
+        content: '<';
+        }
+        code:after{
+        content: '/> ';
+        }
+    
+      @keyframes falling{
+      0%{ transform:rotate(0);}
+      25%{transform:rotate(.1deg);}
+      50%{transform:rotate(.25deg) scale(1.0001);}
+      85%{transform:rotate(.35deg) scale(1.002);}
+      100%{transform:scale(0.1deg);}
+      }
+      
+      /* circle */
+      circle{ 
+      animation: grow 2s infinite;
+      transform-origin:center;
+      }
+      @keyframes grow{
+      0%{ transform:scale(1);}
+      50%{transform:scale(0.5);}
+      100%{transform:scale(1);}
+      }
+      /* responsive SVG */
+      section:nth-child(8) .canvas svg{
+        width:15%;
+        height:auto;
+      }
+      /* Hover groups example */
+      svg.svgHover g.fiveCircles ellipse  {
+      fill:#E7E7E7;
+      }
+      /* target h */
+      svg.svgHover g.h:hover, svg.svgHover g.global:hover g.fiveCircles g.circle1 ellipse {
+        fill:red;
+      }
+      svg.svgHover g.e:hover, svg.svgHover g.global:hover g.fiveCircles g.circle2 ellipse {
+        fill:orange;
+      }
+      svg.svgHover g.l1:hover, svg.svgHover g.global:hover g.fiveCircles g.circle3 ellipse {
+        fill:blue;
+      }
+      svg.svgHover g.l:hover, svg.svgHover g.global:hover g.fiveCircles g.circle4 ellipse {
+        fill:green;
+      }
+      svg.svgHover g.o:hover, svg.svgHover g.global:hover g.fiveCircles g.circle5 ellipse{
+        fill:aqua;
+      }
+      /* group hover*/
+      svg.svgHover g.global:hover g.fiveCircles g.circle1 ellipse{
+        fill:red;
+      }
+      svg.svgHover g.global:hover g.fiveCircles g.circle2 ellipse{
+        fill:aqua;
+      }
+      svg.svgHover g.global:hover g.fiveCircles g.circle3 ellipse{
+        fill:green;
+      }
+      svg.svgHover g.global:hover g.fiveCircles g.circle4 ellipse{
+        fill:gold;
+      }
+      svg.svgHover g.global:hover g.fiveCircles g.circle5 ellipse{
+        fill:yellow;
+      }
+      svg.svgHover g.global g.fiveCircles g.circle1:hover ellipse,
+      svg.svgHover g.global g.fiveCircles g.circle2:hover ellipse,
+      svg.svgHover g.global g.fiveCircles g.circle3:hover ellipse,
+      svg.svgHover g.global g.fiveCircles g.circle4:hover ellipse,
+      svg.svgHover g.global g.fiveCircles g.circle5:hover ellipse{
+        fill:purple;
+      }
+  
+
+    }
+ 
+  }
+}
+

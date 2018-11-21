@@ -1,0 +1,28 @@
+{
+  "nav": [
+    {
+      "name":"home",
+      "href": "./index.html",
+      "title": "home page",
+      "id": "100"
+    },
+    {
+      "name":"portfolio",
+      "href": "./portfolio.html",
+      "title": "portfolio page",
+      "id": "200"
+    },
+    {
+      "name":"contact",
+      "href": "./contact.html",
+      "title": "contact page",
+      "id": "300"
+    },
+    {
+      "name":"library",
+      "href": "./librarySample.html",
+      "title": "library page",
+      "id": "400"
+    }
+  ]
+}

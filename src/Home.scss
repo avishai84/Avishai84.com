@@ -1,0 +1,130 @@
+.home{
+  .relative{position: relative;}
+  .jumbotron {
+    box-shadow: 2px 4px 16px;
+    margin-top: 10%;
+    padding: 3px;
+    margin-bottom: 3px;
+    font-size: 1.15em;
+    line-height: 2.1428571435;
+    color: inherit;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    img{
+      border-radius:50%;
+    }
+    p{
+        font-weight: 400;
+        padding-left: 5%;
+        text-align: left;
+      }
+      .frontEnd{
+        display:flex;
+        flex-wrap: wrap;
+        line-height: 1.1428571435;
+        font-size: inherit;
+        padding-left: 5%;
+         div{
+          font-size: 1.05em;
+          @media(min-width:768px){
+            font-size: 1.5em;
+            line-height: 2.1428571435;
+          }
+        }
+        .bracket:before{
+          content:'{';
+          color: #282845;
+          display: inherit;
+        }
+        .dot{
+          color: #258dc8;
+          display: inherit;
+          .blue{
+            color: #e8991a;
+            display: inherit;
+          }
+        }
+        .dot:before {
+          content:'.';
+          display: inherit;
+        }
+        .bracket:nth-child(2){
+          color: #e8991a;
+          display: inherit;
+        }
+        .bracket:nth-child(2):before{
+          content:'}';
+          color: #282845;
+          display: inherit;
+        }
+      }
+      h1{
+        padding-top: 20px;
+          span.bracket {
+            color: #282845;
+            display: inherit;
+          }
+          span.code {
+            color: #e8991a;
+            display: inherit;
+          }
+          span.dot {
+            color: #258dc8;
+            display: inherit;
+          }
+        }
+      
+    }
+      /* -- Tool tip -- */
+      span[data-toolTip] {
+        text-decoration: none;
+        color: inherit;
+        cursor: help;
+      }
+
+    span[data-toolTip]:hover::after {
+      content: attr(data-toolTip);
+      position: absolute;
+      left: 10%;
+      top:1em;
+      width: 238px;
+      height: 215px;
+      border: 1px #808080 solid;
+      border-radius: 10px;
+      padding: 3px 0 0 0;
+      box-shadow: 2px 3px 40px 1px #4a4a4a;
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 24px;
+      z-index: 1;
+      background: url(images/author-img-tooltip.jpg) rgba(74, 74, 74, 0.7) no-repeat 0 0;
+    }
+
+    .fadeThis {
+      -webkit-animation: fading 1500ms ease-in-out 0s 1 normal none;
+      -moz-animation: fading 1500ms ease-in-out 0s 1 normal none;
+      -o-animation: fading 1500ms ease-in-out 0s 1 normal none;
+      animation: fading 1500ms ease-in-out 0s 1 normal none;
+    }
+
+    @-webkit-keyframes fading {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.2;
+      }
+      40% {
+        opacity: 0.4;
+      }
+      60% {
+        opacity: 0.6;
+      }
+      1000% {
+        opacity: 1;
+      }
+     } 
+    }
+
+  
+
