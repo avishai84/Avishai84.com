@@ -7,11 +7,7 @@ class Library extends Component {
   render() {
     return (
       <div className="library">
-        
         <SVGinDepth/>
-       
-
-
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation.js';
-import 'bootstrap/dist/css/bootstrap.css';
 class Header extends Component {
 
   render() {

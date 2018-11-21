@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 class ScreenSize extends Component {
   constructor(props){
     super(props);
-    this.methodUpdateName = this.methodUpdateName.bind(this);
     this.state = {
       screen_size: 0
     };
+    this.methodUpdateName = this.methodUpdateName.bind(this);
   }
  
   methodUpdateName(size){

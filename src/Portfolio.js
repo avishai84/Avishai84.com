@@ -48,7 +48,6 @@ class Portfolio extends Component {
      // start carousel 
      this.caroselaFn(caroselaArr);
      vimeoPlacement[0].innerHTML = vimeoIframe;
-     //console.log(this.state.caroselaStart);
   }
 
   render() {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './SocialFooter.scss';
-// import 'bootstrap/dist/css/bootstrap.css';
-
+import Youtube from './images/svgSprite/youtube.svg';
+import Linkedin from './images/svgSprite/linkedin.svg';
+import Vimeo from './images/svgSprite/vimeo.svg';
 
 const styles1 ={
   paddingLeft:'3px',
@@ -20,7 +21,6 @@ const daily = date.getDate();
 const year = date.getFullYear();
 const weekly = ['Sunday', 'Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const monthly = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 
 class SocialFooter extends Component {
  
@@ -41,19 +41,15 @@ class SocialFooter extends Component {
           &nbsp;<i className="fa fa-heart-o"></i>
           , a front end developer, {year}.
         </p>
-          <div className="small">
-          
-                <a href="https://www.youtube.com/channel/UCaeHQSEl1OkzWh37mBNhwFQ" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-youtube-square fa-lg"></i>
-                </a>
-                <a href="http://vimeo.com/user17090744" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-vimeo-square fa-lg"></i>
-                </a>
-                <a href="https://www.linkedin.com/pub/avishai-taashur/5/506/555" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-linkedin-square fa-lg"></i>
-                </a>
-             
-          </div>  
+            <a href="https://www.youtube.com/channel/UCaeHQSEl1OkzWh37mBNhwFQ" target="_blank" rel="noopener noreferrer">
+              <i className="icons"><img src={Youtube} alt="youtube icon" /></i>
+            </a>
+            <a href="http://vimeo.com/user17090744" target="_blank" rel="noopener noreferrer">
+            <i className="icons"><img src={Vimeo} alt="Vimeo icon" /></i>
+            </a>
+            <a href="https://www.linkedin.com/pub/avishai-taashur/5/506/555" target="_blank" rel="noopener noreferrer">
+            <i className="icons"><img src={Linkedin} alt="Linkedin icon" /></i>
+            </a>
       </div>
     );
   }

@@ -11,16 +11,14 @@ class Navigation_components extends Component {
 
   render() {
     return (
-    
-        <main className="container">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/contacts" component={Contacts} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/library" component={Library} />
-          </Switch>
-        </main>
-    
+      <main className="container">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/contacts" component={Contacts} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/library" component={Library} />
+        </Switch>
+      </main>
     );
   }
 }
