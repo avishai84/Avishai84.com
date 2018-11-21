@@ -32,7 +32,7 @@ class SocialFooter extends Component {
             <span style={styles1}>{monthly[month]}</span>
             <span style={styles1}>{daily},</span>
             <span style={styles1}>{year}</span><br></br>
-            <span style={styles1}>Made with React - website version: 1.0</span>
+            <span style={styles1}>Made using React - website version: 1.0</span>
         
           </div>
         </small>
