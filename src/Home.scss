@@ -24,13 +24,9 @@
         line-height: 1.1428571435;
         font-size: inherit;
         padding-left: 5%;
-         div{
-          font-size: 1.05em;
-          @media(min-width:768px){
-            font-size: 1.5em;
-            line-height: 2.1428571435;
-          }
-        }
+        font-size: 1.5em;
+        line-height: 2.1428571435;
+  
         .bracket:before{
           content:'{';
           color: #282845;
@@ -80,6 +76,7 @@
         text-decoration: none;
         color: inherit;
         cursor: help;
+        float:left;
       }
 
     span[data-toolTip]:hover::after {
