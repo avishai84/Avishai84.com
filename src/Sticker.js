@@ -39,7 +39,10 @@ class Sticker extends Component {
 
   componentDidUpdate(){
     if(!this.state.closeX){
-      document.querySelector('.sticker button').remove();
+      const btn = document.querySelector('.sticker button');
+      if(btn){
+        document.querySelector('.sticker button').remove();
+      }
     }
   }
 

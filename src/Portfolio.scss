@@ -1,7 +1,13 @@
 .portfolio{
   position:relative;
+  .featurette-heading{
+    padding-top:1em;
+  }
   @media(min-width:992px){
     margin-top:15vh;
+    .featurette-heading{
+      padding-top:o;
+    }
   }
   img{
     display:block;
@@ -12,7 +18,9 @@
   .btn-sm{
     font-size: 0.575rem;
   }
-
+  .download{
+    font-size:13px;
+  }
   .carosela{
     position: absolute;
     top:0;

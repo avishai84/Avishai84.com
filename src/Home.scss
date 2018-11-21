@@ -26,7 +26,9 @@
         padding-left: 5%;
         font-size: 1.5em;
         line-height: 2.1428571435;
-  
+        @media(max-width:568px){
+          font-size: 1.15em;
+        }
         .bracket:before{
           content:'{';
           color: #282845;

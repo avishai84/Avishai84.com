@@ -20,6 +20,7 @@ class Navigation extends Component {
   }
 
 toggleNav(e){
+
 const collaped = e.target.parentNode.nextSibling.classList.contains('collapse') ? e.target.parentNode.nextSibling.classList.remove('collapse') : e.target.parentNode.nextSibling.classList.add('collapse');
 
     this.setState({
