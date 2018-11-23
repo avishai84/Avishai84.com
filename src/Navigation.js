@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import navigation from './navigation.json';
 import './Navigation.scss';
-import {BrowserRouter as Router, NavLink} from 'react-router-dom';
+import {BrowserRouter as Router, NavLink, HashRouter} from 'react-router-dom';
 import NavigationComponents from './NavigationComponents';
 
 const nav = navigation.nav;
@@ -31,7 +31,7 @@ const collaped = e.target.parentNode.nextSibling.classList.contains('collapse') 
 
   render() {
     return (
-      <Router>
+      <HashRouter>
         <main>
           <div className="nav-wrapper">
             <header>
@@ -52,7 +52,7 @@ const collaped = e.target.parentNode.nextSibling.classList.contains('collapse') 
             <NavigationComponents/>
           </div>
         </main>
-      </Router>
+      </HashRouter>
     );
   }
 }

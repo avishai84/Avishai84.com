@@ -17,7 +17,7 @@
     {
       "name":"contacts",
       "href": "/contacts",
-      "title": "contact",
+      "title": "contacts",
       "id": "300",
       "componentName" : "Contacts"
     },
@@ -26,7 +26,7 @@
       "href": "/library",
       "title": "library",
       "id": "400",
-      "componentName" : "SampleLib"
+      "componentName" : "Library"
     }
   ]
 }

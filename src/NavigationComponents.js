@@ -4,7 +4,7 @@ import Home from './Home';
 import Contacts from './Contacts';
 import Portfolio from './Portfolio';
 import Library from './Library';
-import {BrowserRouter as Router, Route, Switch, NavLink} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 
 class Navigation_components extends Component {
