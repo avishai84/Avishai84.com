@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './Library.scss';
 import SVGinDepth from './SVGinDepth';
+import ConvertSVGTutorial from './ConvertSVGTutorial';
 
-
-const LoadingIcon = ({name}) => (
-  <div className="spinIcon" text={name}></div>
+const LoadingIcon = () => (
+  <div className="spinIcon"></div>
  );
 const textInfo = 'More content to come soon...';
- 
+const foo = document.querySelector('.library').append(<LoadingIcon/>);
 
 class Library extends Component {
 
@@ -17,7 +17,8 @@ constructor(props){
   this.setState({
     scroll:'',
     isLoading:false,
-    text:''
+    text:'',
+    spin: ''
   });
   this.scroller = this.scroller.bind(this);
 }
@@ -26,9 +27,10 @@ constructor(props){
 
 componentDidMount(){
   this.setState({
-    scroll: window.addEventListener('scroll',  this.scroller)
+    scroll: window.addEventListener('scroll',  this.scroller),
+    spin: this.foo
   });
-  
+  console.log('DOM ready ');
 }
 componentWillUnmount(){
   this.setState({
@@ -49,12 +51,14 @@ scroller(){
   // add more content at the end of the page
   if(window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
     this.setState({
-      isLoading: true
-     // text: document.querySelector('.library').append(textInfo)
+      isLoading: true,
+      // text: document.querySelector('.library').append(textInfo),
+      // spin:  document.querySelector('.library .spinner').style.display = 'block'
     });
   }else{
     this.setState({
-      isLoading: false
+      isLoading: false,
+      spin: console.log(document.querySelector('.library'))
       //text:''
   
     });
@@ -67,7 +71,9 @@ scroller(){
     return (
       <div className="library">
         <SVGinDepth/>
-        {this.isLoading?<LoadingIcon className="spinner"/>:''}
+        
+        {this.isLoading ? this.spin : 'not loading'}
+       
       </div>
     );
   }
