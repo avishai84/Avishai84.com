@@ -26,4 +26,21 @@
       transform: rotate(360deg);
     }
   }
+  .videoCollection {
+      width: 100%;
+      overflow-x: hidden;
+      max-width: 80%;
+      margin: 1em auto;
+      box-shadow: 3px 4px 2px 2px #bebebe;
+  }
+  .screenreader{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 }
