@@ -27,7 +27,7 @@ class SocialFooter extends Component {
   render() {
     return (
       <div className="socialFooter ">
-        <small className="text-muted small" style={styles2}>Last update: Friday, November 23, 2018
+        <small className="text-muted small" style={styles2}>Last update: Tuesday, February 26, 2019
           <div id="date" style={styles2}>Today is: {weekly[day]},
             <span style={styles1}>{monthly[month]}</span>
             <span style={styles1}>{daily},</span>
